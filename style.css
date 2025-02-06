@@ -1,0 +1,96 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Animated SVG Background */
+#background-svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Main Content Container */
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 2s ease-out;
+}
+
+/* Header Styling */
+header h1 {
+  text-align: center;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff4e50;
+}
+
+/* Poem Text Styling */
+.poem p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: justify;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.poem p:hover {
+  transform: scale(1.02);
+}
+
+/* Highlight effect on paragraph click */
+.poem p.highlight {
+  background-color: #ffefd5;
+}
+
+/* Footer Link Styling */
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ff4e50;
+  font-weight: bold;
+  border: 2px solid #ff4e50;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background 0.3s, color 0.3s;
+}
+
+footer a:hover {
+  background: #ff4e50;
+  color: #fff;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
