@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Animated SVG Background */
 #background-svg {
   position: fixed;
   top: 0;
@@ -23,7 +21,6 @@ body {
   z-index: -1;
 }
 
-/* Main Content Container */
 .container {
   max-width: 800px;
   margin: 100px auto;
@@ -35,7 +32,6 @@ body {
   animation: fadeIn 2s ease-out;
 }
 
-/* Header Styling */
 header h1 {
   text-align: center;
   font-size: 2.8em;
@@ -44,7 +40,6 @@ header h1 {
   border-bottom: 2px solid #ff4e50;
 }
 
-/* Poem Text Styling */
 .poem p {
   font-size: 1.2em;
   margin-bottom: 20px;
@@ -57,12 +52,10 @@ header h1 {
   transform: scale(1.02);
 }
 
-/* Highlight effect on paragraph click */
 .poem p.highlight {
   background-color: #ffefd5;
 }
 
-/* Footer Link Styling */
 footer {
   text-align: center;
   margin-top: 30px;
@@ -83,7 +76,6 @@ footer a:hover {
   color: #fff;
 }
 
-/* Fade-in Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
